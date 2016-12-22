@@ -12,13 +12,15 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/tv_filter"
             style="@style/tv_filtering"
-            android:text="Filter" />
+            android:text="Filter Department" />
 
         <TextView
             android:id="@+id/tv_sort"
             style="@style/tv_filtering"
             android:tag="1"
+            android:drawableLeft="@drawable/ic_descending"
             android:text="Sort By Salary" />
     </LinearLayout>
 

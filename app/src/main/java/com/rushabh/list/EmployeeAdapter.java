@@ -37,6 +37,15 @@ public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeViewHolder> {
         return viewHolder;
     }
 
+    void changeArrayList(ArrayList<EmployeeModel> employeeModelArrayList) {
+        this.employeeModelArrayList = employeeModelArrayList;
+        notifyDataSetChanged();
+    }
+
+    ArrayList<EmployeeModel> getDataSet() {
+        return this.employeeModelArrayList;
+    }
+
     @Override
     public void onBindViewHolder(EmployeeViewHolder holder, int position) {
         EmployeeModel employeeModel = employeeModelArrayList.get(position);
